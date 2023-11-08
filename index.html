@@ -50,6 +50,7 @@
 
         .author {
             font-size: 24px;
+            word-break: break-all;
         }
 
         .phrase {
@@ -83,7 +84,7 @@ thoughts.forEach(t => {
 
     const author = document.createElement('div');
     author.className = 'author';
-    author.innerHTML = t.created_at + " criado por https://github.com/" +  t.user.login;
+    author.innerHTML = t.created_at + " criado por "  + `<a href="https://github.com/${t.user.login}">${t.user.login}</a>`;
 
     const phrase = document.createElement('div');
     phrase.className = 'phrase';
