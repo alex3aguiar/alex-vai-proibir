@@ -83,7 +83,7 @@ thoughts.forEach(t => {
 
     const author = document.createElement('div');
     author.className = 'author';
-    author.innerHTML = t.created_at + " criado por https://github.com/" +  a.user.login;
+    author.innerHTML = t.created_at + " criado por https://github.com/" +  t.user.login;
 
     const phrase = document.createElement('div');
     phrase.className = 'phrase';
