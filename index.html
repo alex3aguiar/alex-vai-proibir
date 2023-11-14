@@ -76,7 +76,7 @@ AOS.init();
 
 
 let batata = true;
-thoughts.forEach(t => {
+thoughts.filter(a=> a.labels.some(b=> b.name == 'proibiçao revisada pelo alex')).forEach(t => {
     const div = document.createElement('div');
     div.className = 'thought';
     div.setAttribute('data-aos', batata ? 'fade-right' : 'fade-left')
